@@ -1,0 +1,45 @@
+/* Profundidad sutil: se activa con el puntero y no altera el contenido. */
+.hero-art {
+  perspective: 1100px;
+}
+
+.hero-art img,
+.hero-stamp,
+.gold-frame,
+.area-card,
+.fun-card {
+  will-change: transform;
+}
+
+.hero-art img {
+  transform: rotateX(var(--hero-rotate-x, 0deg)) rotateY(var(--hero-rotate-y, 0deg)) translateZ(18px);
+  transition: transform 180ms ease-out;
+  box-shadow: 18px 22px 42px rgba(0, 0, 0, .28);
+}
+
+.hero-art .gold-frame {
+  transform: translateZ(-16px) rotateZ(-1.5deg);
+}
+
+.hero-art .hero-stamp {
+  transform: translateZ(42px) rotate(-11deg);
+}
+
+.area-card,
+.fun-card {
+  transform: perspective(900px) rotateX(var(--card-rotate-x, 0deg)) rotateY(var(--card-rotate-y, 0deg)) translateZ(0);
+  transition: transform 190ms ease-out, box-shadow 190ms ease-out, background 190ms ease-out;
+}
+
+.area-card:hover,
+.fun-card:hover {
+  box-shadow: 0 24px 36px rgba(0, 0, 0, .25);
+}
+
+@media (hover: none), (max-width: 760px), (prefers-reduced-motion: reduce) {
+  .hero-art img,
+  .area-card,
+  .fun-card {
+    transform: none;
+  }
+}
