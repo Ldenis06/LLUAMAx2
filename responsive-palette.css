@@ -1,0 +1,86 @@
+/* Paleta única para escritorio y móvil: azul, celeste, blanco y dorado. */
+body {
+  background: #071b35;
+}
+
+.plan,
+.contrast {
+  color: #fff;
+  background: linear-gradient(145deg, #0a2646, #0d365d);
+}
+
+.section-intro > p:last-child,
+.principles p {
+  color: #d3e7f3;
+}
+
+.eyebrow.blue {
+  color: #8ad9f8;
+}
+
+.principles,
+.principles article {
+  border-color: rgba(255, 255, 255, .2);
+}
+
+.principles h3 {
+  color: #fff;
+}
+
+.old {
+  background: #163f61;
+  color: #dbeaf4;
+}
+
+.old h3 {
+  color: #fff;
+}
+
+.old p {
+  color: #8ad9f8;
+}
+
+.comparison-col ul {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .section-shell {
+    width: min(100% - 32px, 1160px);
+  }
+
+  .plan,
+  .contrast {
+    padding: 68px 20px;
+    width: 100%;
+  }
+
+  .principles {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .principles article {
+    min-height: auto;
+    padding: 0 0 16px 16px;
+  }
+
+  .comparison-col {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .fun-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-stats {
+    gap: 16px;
+  }
+}
