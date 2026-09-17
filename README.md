@@ -43,24 +43,6 @@ El sitio presenta una campaña ficticia de proyecto escolar con estas secciones:
 - Reproductor de YouTube integrado con un enlace alternativo.
 - Sin dependencias de instalación: se abre directamente desde `index.html`.
 
-## Uso local
-
-1. Descargá o cloná este repositorio.
-2. Abrí `index.html` en cualquier navegador web moderno.
-
-No requiere servidor, instalación ni configuración adicional.
-
-## Estructura
-
-```text
-├── index.html                 # Estructura y contenido del sitio
-├── styles.css                 # Estilos base
-├── image-fix.css              # Encuadre de la imagen de campaña
-├── three-d.css                # Profundidad e interacciones 3D
-├── video-intro.css            # Sección de video inicial
-├── responsive-palette.css     # Paleta y ajustes responsive
-├── script.js                  # Navegación e interacciones
-└── campaign.png               # Imagen principal de campaña
 ```
 
 ## Aclaración
